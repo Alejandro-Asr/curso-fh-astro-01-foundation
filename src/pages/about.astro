@@ -1,0 +1,19 @@
+---
+import CustomTitle from '../components/CustomTitle.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+
+// Server Only
+const name = 'Alejandro Sánchez';
+const title = 'About';
+---
+
+<MainLayout title="About Page">
+  <h1>About</h1>
+  <CustomTitle title="this custom title" />
+</MainLayout>
+
+<style>
+  h1 {
+    color: red;
+  }
+</style>
